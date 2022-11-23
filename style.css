@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Rubik-Regular";
+    font-family: "Rubik";
     src: url(./assets/Rubik-Regular.ttf) format(ttf);
 }
 
 * {
-    font-family: "Rubik-Regular", sans-serif;
+    font-family: "Rubik", sans-serif;
     color: white;
 }
 
@@ -80,15 +80,26 @@ nav{
 }
 nav ul li {
     list-style-type: none;
-    border: solid white 1px;
-    margin: 10px;
+    /* border: solid white 1px;
+    margin: 1px 10px 10px 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 20px; */
 }
-li {
+/* li {
     padding: 1px 40px;
+} */
+button{
+    padding: 0;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 0.5rem;
 }
-
+button :hover {
+    background-color: rgba(237, 255, 255, 0.2);
+}
 a {
     text-decoration: none;
     text-transform: uppercase;
