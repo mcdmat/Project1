@@ -5,7 +5,7 @@
 
 * {
     font-family: "Rubik", sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     color: white;
     box-sizing: border-box;
 }
@@ -22,33 +22,41 @@ body {
     justify-content: center;
 }
 
-
-main {
+header {
     width: 85vw;
-    height: 90vh;
+    height: 38vh;
     margin: auto;
     background-color: rgba(54, 52, 52, 0.7);
-    overflow: scroll; 
 }
-
 
 h1 {
     width: 50%;
-    padding-bottom: 3%;
-    padding-left: 2%;
-    font-size: 34px;
+    padding: 5% 0 3% 2%;
+  
+    font-size: 24px;
     border-bottom: 2px solid white;
 }
 
 .image_container {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: auto;
 }
 
 img {
     width: 100%;
+    border-radius: 10px;
 }
+
+
+main {
+    width: 85vw;
+    height: 53vh;
+    margin: auto;
+    background-color: rgba(54, 52, 52, 0.7);
+    overflow-y: scroll; 
+}
+
 
 .presentation {
     margin: auto;
@@ -62,25 +70,37 @@ iframe {
 
 .mobile-nav {
     width: 85vw;
-    height: 8%;
+    height: 6vh;
     margin: auto;
     bottom: 0;
     position: relative;
-    padding: 0;
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(223, 215, 215, 0.15);
     display: flex;
 }
 
-ul { 
+ul, li, a { 
     margin: 0;
     padding: 0;
-    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style-type: none; 
+  }
+
+ul li a {
+    width: 70%;
+    height:70%;
 }
-li {
-    list-style-type: none;  
+li  {
+    margin: 1%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px  white;
 }
+
+li:hover {
+    background-color: rgba(237, 255, 255, 0.3);
+}
+
 
