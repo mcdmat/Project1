@@ -9,54 +9,78 @@
     color: white;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-image: url(./assets/background.jpg);
     background-attachment: fixed;
     background-position: center center;
-    background-size: cover; 
+    background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
 }
+
+
 main {
     width: 85vw;
-    margin: auto; 
+    height: 90vh;
+    margin: auto;
     background-color: rgba(54, 52, 52, 0.7);
+    overflow: scroll; 
 }
-h1{ 
-    font-size: 24px;
+
+
+h1 {
+    width: 50%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    font-size: 34px;
+    border-bottom: 2px solid white;
 }
+
 .image_container {
     width: 80%;
     height: auto;
     margin: auto;
 }
+
 img {
     width: 100%;
 }
+
 .presentation {
+    margin: auto;
     width: 90%;
 }
-iframe { 
-    margin: auto;
-    width: 70%; 
-    height: 30%;
-} 
-/* nav fixed end bottom */
 
-nav ul li {
-    list-style-type: none;
+iframe {
+    width: 90%;
+    margin-left: 5%;
 }
-button {
-    position: fixed;
-    overflow: scroll;
+
+.mobile-nav {
+    width: 85vw;
+    height: 8%;
+    margin: auto;
     bottom: 0;
+    position: relative;
     padding: 0;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0);
-    width: 60vw;
-    height: 4vh;
-    margin-bottom: 0.5rem;
-} 
+    display: flex;
+}
+
+ul { 
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li {
+    list-style-type: none;  
+}
+
