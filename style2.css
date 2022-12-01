@@ -152,3 +152,6 @@ width: 10vh;
 .ELO  a {
  display: inline-block;
 }
+.white-space {
+ white-space: pre-line;
+}
