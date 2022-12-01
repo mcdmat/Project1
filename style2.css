@@ -155,3 +155,24 @@ width: 10vh;
 .white-space {
  white-space: pre-line;
 }
+/**/
+.press {
+    display: flex;
+    height: 80vh;
+}
+.img-press {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.img-press1 {
+    filter: grayscale(100%);
+    height: 10%;
+}
+
+.img-press2 {
+    filter: grayscale(100%);
+    width: 45%;
+}
