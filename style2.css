@@ -108,4 +108,15 @@ li:hover {
     background-color: rgba(237, 255, 255, 0.3);
 }
 
-
+.members {
+    display: flex;
+    flex-direction: column;
+}
+.member {
+    display: flex;
+    /* flex-direction: column; */
+}
+.img_member {
+    width: 30%;
+    /* height: ; */
+}
