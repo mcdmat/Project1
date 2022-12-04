@@ -1,11 +1,13 @@
+/*style for other sheets*/
+
 @font-face {
     font-family: "Rubik";
     src: url(.assets/Rubik-VariableFont_wght.ttf);
 }
-
+/*COMMON*/
 * {
     font-family: "Rubik", sans-serif;
-    font-size: 13px;
+    font-size: 3vmin;
     color: white;
     box-sizing: border-box;
 }
@@ -35,21 +37,53 @@ h1 {
     margin: 0;
     width: 50%;
     padding: 5% 0 3% 3%;
-    font-size: 24px;
-   text-transform: uppercase;
-    border-bottom: 2px solid white;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 0.1em solid white;
 }
-
 
 main {
     width: 85vw;
     height: 80vh;
     margin: auto;
     position: relative;
-    top: 5vh;
+    top: 5%;
     background-color: rgba(54, 52, 52, 0.7);
     overflow-y: scroll; 
 }
+/** mobile navbar**/
+.mobile-nav {
+    width: 85vw;
+    height: 5vh;
+    bottom: 0;
+    left: 7.5%;
+    position: absolute;
+    background-color: rgba(223, 215, 215, 0.15);
+    display: flex;
+}
+
+ul, li, a  { 
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+  }
+
+li {
+    border-radius: 50%;
+    margin: 1%;
+}
+li i {
+    color: white;
+    background: none;
+}
+
+li:hover {
+    background-color: rgba(237, 255, 255, 0.3); */
+}
+/*club*/
 .image_container {
     width: 90%;
     height: auto;
@@ -70,39 +104,8 @@ img {
    border-radius: 10px;
 }
 /**/
-.mobile-nav {
-    width: 85vw;
-    height: 5vh;
-    margin: auto;
-    bottom: 0;
-    left: 7.5%;
-    position: absolute;
-    background-color: rgba(223, 215, 215, 0.15);
-    display: flex;
-}
 
-ul, li, a  { 
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-  }
-
-li {
-    border-radius: 45%;
-}
-li i {
-    color: white;
-    background: none;
-}
-
-li:hover {
-    background-color: rgba(237, 255, 255, 0.3); */
-}
-/**/
+/*members*/
 .members {
     display: flex;
     flex-direction: column;
@@ -158,7 +161,7 @@ li:hover {
 .white-space {
  white-space: pre-line;
 }
-/**/
+/*press*/
 .press {
     height: 80vh;
 }
@@ -210,7 +213,7 @@ li:hover {
     filter: grayscale(100%);
 }
 
-/**/
+/*partners*/
 .partners {
     display: grid;
     grid-template-columns: 1fr;
@@ -240,7 +243,7 @@ li:hover {
     width: 80%;
     margin: auto;
 }
-/**/
+/*contact*/
 .adress{
     height: 65%;
     margin: auto;
@@ -261,7 +264,12 @@ li:hover {
 .ad3 {
     grid-area: 4/1/6/2;
     margin: auto;
+    width: 90%;
     height: 100%;
+    background-image: url(./assets/oasis-1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
     
 }
 .ad1 > iframe {
@@ -269,15 +277,9 @@ li:hover {
     height: 100%;
     border-radius: 10px;
 }
-/* .ad2 > h2 {
 
-} */
-.ad3 > img {
-    width: 90%;
-    height: 100%;
-}
 .phone_mail_sm {
-    height: 35%;
+    height: 32%;
     margin: auto;
    width: 90%;
 }
@@ -289,10 +291,11 @@ address {
     height: 80%;
 }
 address > a {
-    height: 5%;
+   justify-content: flex-start;
+   text-decoration: none;
 }
 .SM {
-    padding-top: 3%;
+    padding-top: 5%;
     display: flex;
     justify-content: space-around;
 }
