@@ -33,10 +33,8 @@ header {
     background-color: rgba(54, 52, 52, 0.7);
     z-index: 1;
 }
-.for_desktop{
-    display: none;
-}
-.for_mobiles {
+
+.for_cards {
     margin: 0;
     width: 50%;
     padding: 3% 0 3% 3%;
@@ -315,20 +313,21 @@ i {
     header{
         top: 0;
         position: absolute;
+        height: 20vh;
+        width: 100vw;
         background-color: rgba(223, 215, 215, 0.0);
     }
-    .for_desktop {
-       
-        margin: 0;
-        width: 50%;
-        padding: 3% 0 3% 3%;
-        font-size: 10rem;
-        text-transform: uppercase;
-        border-bottom: 0.1em solid white;
+    .for_cards {
+        position: absolute;
+        top: 10vh;
+        left : 7.5%;
+        width: 85vw;
+        height: 15vw;
+        background-color: rgba(54, 52, 52, 0.7) ;
+        
+        
     }
-    .for_mobiles {
-        display: none;
-    }
+    
     .mobile-nav {
         display:none;
     }
@@ -337,15 +336,13 @@ i {
         position: absolute; 
         width: 100vw;
         height: 10vh;
-
-
-    background-color: rgba(223, 215, 215, 0.15);
-    display: flex;
-}
+        background-color: rgba(223, 215, 215, 0.15);
+        display: flex;
+    }
 
     nav, ul, li, a { 
         width: 100%;
-  }
+    }
     li {
         border: 1px solid white;
         border-radius: 0;
@@ -361,11 +358,11 @@ i {
         text-transform: uppercase;
         text-shadow: grey 2px 2px 2px;
         font-size: 0.8em;
-      }
+    }
 
     main {
-        top: 10vh;
-        height: 90vh;
+        top: 20vh;
+        height: 80vh;
     }
 } 
 
