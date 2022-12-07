@@ -27,17 +27,18 @@ body {
 header {
     width: 85vw;
     height: 10vh;
-    position: relative;
-    top : 5%;
+    top : 5vh;
     margin :auto;
+    position: relative;
     background-color: rgba(54, 52, 52, 0.7);
+    z-index: 1;
 }
 
 h1 {
     margin: 0;
     width: 50%;
-    padding: 5% 0 3% 3%;
-    font-size: 2em;
+    padding: 3% 0 3% 3%;
+    font-size: 4Vmin;
     text-transform: uppercase;
     border-bottom: 0.1em solid white;
 }
@@ -47,7 +48,7 @@ main {
     height: 80vh;
     margin: auto;
     position: relative;
-    top: 5%;
+    top: 5vh;
     background-color: rgba(54, 52, 52, 0.7);
     overflow-y: scroll; 
 }
@@ -81,7 +82,7 @@ li i {
 }
 
 li:hover {
-    background-color: rgba(237, 255, 255, 0.3); */
+    background-color: rgba(237, 255, 255, 0.3); 
 }
 /*club*/
 .image_container {
@@ -303,4 +304,20 @@ i {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
-    
+
+@media screen and (min-width:900px) {
+    header{
+        top: 10vh;
+        left: 7.5%;
+        position: absolute;
+    }
+    main {
+        top: 20vh;
+        height: 90vh;
+    }
+    .mobile-nav {
+        display: none;
+    }
+}
+/* @media screen and (min-width:1000px) {
+} */
