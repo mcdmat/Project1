@@ -98,10 +98,19 @@ li:hover {
 }
 
 /*club*/
-.image_container {
+.box-img {
     width: 90%;
     height: 30%;
     margin: auto;
+}
+.image_container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.image_desktop{
+    display: none;
+    
 }
 img {
     width: 100%;
@@ -117,8 +126,9 @@ img {
     width: 90%;
 }
 
-.presentation > iframe {
+#rules > iframe {
    border-radius: 10px;
+   width : 100%;
 }
 /**/
 
@@ -171,12 +181,15 @@ img {
 .presentation_member > p {
     margin: 0;
 }
+p > a {
+    display: initial;
+}
 .ELO {
     padding: 0 3%;
 }
-.ELO  a {
+/* .ELO  a {
  display: inline-block;
-}
+} */
 .white-space {
  white-space: pre-line;
 }
@@ -256,7 +269,7 @@ img {
   .modal-content > img {
     width: 100%;
     height: auto;
-    object-position: middle;
+    /* object-position: middle; */
     object-fit: cover;
   }
 /*partners*/
@@ -370,18 +383,16 @@ i {
     .for_cards{
         padding-top: 1.5%;
     }
-    .for_cards > h1{
+    .for_cards > h1 {
         margin: 0;
         width: 50%;
         height: 100%;
-        
-       
     }
 
-    
     .mobile-nav {
         display:none;
     }
+
     .desktop-nav{
         top: 0;
         position: absolute; 
@@ -394,6 +405,7 @@ i {
     nav, ul, li, a { 
         width: 100%;
     }
+
     li {
         border: 1px solid white;
         border-radius: 0;
@@ -401,9 +413,11 @@ i {
         list-style-type: none;
         text-align: center;
     }
+
     li:hover {
         background-color: rgba(237, 255, 255, 0.3); 
     }
+
     a {
         text-decoration: none;
         text-transform: uppercase;
@@ -415,6 +429,13 @@ i {
         top: 20vh;
         height: 80vh;
     }
+    
+    #rules {
+        max-width: 60%;
+        height: 100%;
+        margin: auto;
+    }
+   
     .img_member {
         width: 20vh;
         height: 20vh;
@@ -455,5 +476,21 @@ i {
     }
 } 
 
-/* @media screen and (min-width:1000px) {
-}
+@media screen and (min-width:500px) {
+    .box-img {
+        height:  40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .image_container {
+        width: 45%;
+        margin: 0;
+    }
+    .image_desktop {
+        display: block;
+        width: 45%;
+        height: 100%;
+        margin: 0;
+    }
+} 
