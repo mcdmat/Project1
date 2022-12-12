@@ -1,39 +1,39 @@
-const modal = document.querySelector("#myModal");
-let press = document.querySelectorAll(".pressImg");
-const bigPress = document.querySelector(".modal-content img");
+// script for index page
+  
+const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
 
-press =[...press];
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
 
-for (let i = 0; i < press.length; i++) {
-  press[i].addEventListener("click", () => {
-    let imgSrc = press[i].src.split("/").pop();
-    bigPress.src = `./press/maxi_${imgSrc}`;
-    modal.style.display = "block";
-  });
-}
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+});
 
-modal.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-// press =[...press];
 
-// press.map((pressImg) => {
-// pressImg.addEventListener('click', () => {
-//   let smallSrc = pressImg.src.split("/").pop();
-//   console.log(smallSrc);
-//   bigPress.src = `./press/maxi_${smallSrc}`;
-//   modal.getElementsByClassName.display = "block";
-// });
-// });
+
+
+// script for press page
+
+// const modal = document.querySelector("#myModal");
+// let press = document.querySelectorAll(".pressImg");
+// const bigPress = document.querySelector(".modal-content img");
+
+// press = [...press];
+
+// for (let i = 0; i < press.length; i++) {
+//   press[i].addEventListener("click", () => {
+//     let imgSrc = press[i].src.split("/").pop();
+//     bigPress.src = `./press/maxi_${imgSrc}`;
+//     modal.style.display = "block";
+//   });
+// }
+
 // modal.addEventListener("click", () => {
 //   modal.style.display = "none";
 // });
-// console.log(press);
-
-// console.log(newPress);
-
-// let imgPress1 = document.querySelector('#img-press1');
-// document.addEventListener('click'), function(){
-//   document.querySelector('#img1').src = "./press/neversbotte.jpg";
-// };
-

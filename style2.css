@@ -398,7 +398,7 @@ i {
         position: absolute; 
         width: 100vw;
         height: 10vh;
-        background-color: rgba(223, 215, 215, 0.15);
+        background-color: rgba(223, 215, 215, 0.05);
         display: flex;
     }
 
@@ -441,8 +441,7 @@ i {
         height: 20vh;
     }
     .modal-content {
-    margin: 10vh 10vh; /* 15% from the top and centered */
-    /* padding: 20px; */
+    margin: 10vh 10vh; 
     height: 80vh;
     }
     .partners {
