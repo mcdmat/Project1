@@ -331,6 +331,7 @@ p > a {
 .ad1 > iframe {
     width: 90%;
     height: 100%;
+    frameborder: 0;
     border-radius: 10px;
 }
 
