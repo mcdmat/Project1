@@ -38,25 +38,12 @@ header {
     width: 50%;
     height: 90%;
     padding-left: 3% ;
-    /* font-size: 4Vmin; */
     text-transform: uppercase;
-    /* border-bottom: 0.1em solid white; */
 }
 .for_cards > h1 {
-    /* margin: auto; */
     height: 90%;
     font-size: 4Vmin;
     border-bottom: 0.1em solid white;
-}
-
-main {
-    width: 85vw;
-    height: 80%;
-    margin: auto;
-    position: relative;
-    top: 5vh;
-    background-color: rgba(54, 52, 52, 0.7);
-    overflow-y: scroll; 
 }
 /**navbar**/
 .desktop-nav {
@@ -94,6 +81,20 @@ li i {
 li:hover {
     background-color: rgba(237, 255, 255, 0.3); 
 }
+main {
+    width: 85vw;
+    height: 80%;
+    margin: auto;
+    position: relative;
+    top: 5vh;
+    background-color: rgba(54, 52, 52, 0.7);
+    overflow-y: scroll; 
+}
+
+/* club - contact -members */
+.white-space {
+    white-space: pre-line;
+   }
 
 /*club*/
 .box-img {
@@ -128,7 +129,6 @@ img {
    border-radius: 10px;
    width : 100%;
 }
-/**/
 
 /*members*/
 .members {
@@ -185,12 +185,7 @@ p > a {
 .ELO {
     padding: 0 3%;
 }
-/* .ELO  a {
- display: inline-block;
-} */
-.white-space {
- white-space: pre-line;
-}
+
 /*press*/
 .press {
     height: 80vh;
@@ -270,6 +265,7 @@ p > a {
     /* object-position: middle; */
     object-fit: cover;
   }
+
 /*partners*/
 .partners {
     display: grid;
@@ -309,7 +305,6 @@ p > a {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
 }
-
 .ad1 {
     grid-area: 1/1/3/2;
     height: 100%;
@@ -332,7 +327,7 @@ p > a {
 .ad1 > iframe {
     width: 90%;
     height: 100%;
-    frameborder: 0;
+    border: 0;
     border-radius: 10px;
 }
 
