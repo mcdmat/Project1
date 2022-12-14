@@ -83,8 +83,6 @@ img {
     object-position: bottom;
     border-radius: 10px;   
 }
-
-
 .presentation {
     margin: auto;
     width: 90%;
@@ -227,7 +225,6 @@ p > a {
   .modal-content > img {
     width: 100%;
     height: auto;
-    /* object-position: middle; */
     object-fit: cover;
   }
 
@@ -327,11 +324,11 @@ i {
 }
 .mobile-nav {
     z-index: 1;
+    position: fixed;
+    left: 7.5%;
+    bottom: 0;
     width: 85vw;
     height: 5%;
-    bottom: 0;
-    left: 7.5%;
-    position: fixed;
     background-color: rgba(223, 215, 215, 0.15);
     display: flex;
 }
