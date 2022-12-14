@@ -45,42 +45,7 @@ header {
     font-size: 4Vmin;
     border-bottom: 0.1em solid white;
 }
-/**navbar**/
-.desktop-nav {
-    display:none;
-}
-.mobile-nav {
-    z-index: 1;
-    width: 85vw;
-    height: 5%;
-    bottom: 0;
-    left: 7.5%;
-    position: fixed;
-    background-color: rgba(223, 215, 215, 0.15);
-    display: flex;
-}
 
- ul, li, a  { 
-    width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none; 
-  }
-
-li {
-    border-radius: 50%;
-    margin: 1%;
-}
-li i {
-    color: white;
-    background: none;
-}
-
-li:hover {
-    background-color: rgba(237, 255, 255, 0.3); 
-}
 main {
     width: 85vw;
     height: 80%;
@@ -355,6 +320,42 @@ address > a {
 i {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+/**navbar**/
+.desktop-nav {
+    display:none;
+}
+.mobile-nav {
+    z-index: 1;
+    width: 85vw;
+    height: 5%;
+    bottom: 0;
+    left: 7.5%;
+    position: fixed;
+    background-color: rgba(223, 215, 215, 0.15);
+    display: flex;
+}
+
+ ul, li, a  { 
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+  }
+
+li {
+    border-radius: 50%;
+    margin: 1%;
+}
+li i {
+    color: white;
+    background: none;
+}
+
+li:hover {
+    background-color: rgba(237, 255, 255, 0.3); 
 }
 
 @media screen and (min-width:800px) {
