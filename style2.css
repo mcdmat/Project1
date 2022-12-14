@@ -23,7 +23,7 @@ body {
 
 header {
     width: 85vw;
-    height: 10vh;
+    height: 10%;
     top : 5vh;
     margin :auto;
     position: relative;
@@ -51,7 +51,7 @@ header {
 
 main {
     width: 85vw;
-    height: 80vh;
+    height: 80%;
     margin: auto;
     position: relative;
     top: 5vh;
@@ -64,7 +64,7 @@ main {
 }
 .mobile-nav {
     width: 85vw;
-    height: 5vh;
+    height: 5%;
     bottom: 0;
     left: 7.5%;
     position: fixed;
