@@ -131,21 +131,16 @@ footer {
   position: absolute;
   bottom: 0;
 }
-/***text carousel**/
-.slider-wrapper {
-  height: 100%;
-  margin: 0.2rem;
-  position: relative;
-  overflow: hidden;
-}
+/***text random**/
+
 
 .slides-container {
   height: calc(10vh - 2rem);
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  overflow: scroll;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slides-container::-webkit-scrollbar {
