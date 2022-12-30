@@ -12,11 +12,13 @@ const text = [
   "Les sacrifices démontrent seulement que quelqu'un a gaffé.</br>(Savielly Tartacover)",
   "La menace est plus forte que son exécution.</br>(Aaron Nimzovitch)",
 ];
-slideButton.addEventListener("click", () => {
 const slide = (array) => {
   let i = Math.floor(Math.random() * array.length);
     slidesContainer.innerHTML = `<p> ${array[i]} </p>`;
  }
- slide(text);
-  });
+setInterval(() => {slide(text)}, 5000);
+
+slideButton.addEventListener("click",function() {slide(text)});
+
+
 
