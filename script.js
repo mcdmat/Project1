@@ -11,6 +11,12 @@ const text = [
   "On n'a jamais gagné une partie en abandonnant.</br>(Savielly Tartacover)",
   "Les sacrifices démontrent seulement que quelqu'un a gaffé.</br>(Savielly Tartacover)",
   "La menace est plus forte que son exécution.</br>(Aaron Nimzovitch)",
+  "Celui qui prend des risques peut perdre, celui qui n'en prend pas perd toujours.</br>(Xavier Tartacover)",
+  "On peut tirer plus d'utilité d'une partie perdue que de cent parties gagnées.</br>(José Raúl Capablanca)",
+  "Le génie consiste à savoir transgresser les règles au moment opportun.</br>(Richard Teichmann)",
+  "Il n'y a pas de sport plus violent que les échecs.</br>(Garry Kasparov)",
+  "Pour moi, les échecs ne sont pas un jeu mais un art.</br>(Alexandre Alekhine)",
+  "<strong>Pourquoi dit-on échec et mat ?</strong></br>Le mot désignait à l'origine l'interjection d'un des deux joueurs,</br>avertissant que le roi de l'adversaire est menacé.</br>Il est emprunté, par l'intermédiaire de l'arabe au persan 'sah mat' 'le roi est mort'."
 ];
 const slide = (array) => {
   let i = Math.floor(Math.random() * array.length);
